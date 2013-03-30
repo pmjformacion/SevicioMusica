@@ -46,12 +46,6 @@ public class ServicioMusica extends Service {
 		//notificacion.defaults |= Notification.DEFAULT_SOUND;
 		notificacion.defaults |= Notification.DEFAULT_VIBRATE;  // necesita permiso en el fichero MANIFEST
 		
-		// poner vibración a la notificacion
-		// definir patrónd de vibración
-		//long[] vibrate ={0,100,200,300};
-		//notificacion.vibrate |= vibrate;
-		//notificacion.vibrate = Notification.DEFAULT_VIBRATE;
-		
 		nm.notify(ID_NOTIFICACION_CREAR, notificacion);
 		return START_STICKY;
 	}
